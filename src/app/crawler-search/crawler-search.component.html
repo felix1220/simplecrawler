@@ -1,0 +1,16 @@
+<div class="center searchbox">
+  Search:<input type="text" [(ngModel)]="searchWord"/> &nbsp;
+  <br/><br/>
+  <button class="btn" (click)="launchSearch()">Search</button>&nbsp;
+  
+</div>
+<div class="center searchbox  resultspane">
+  <h3>Search Results:</h3>
+  <div >
+    Found &nbsp;&nbsp;{{searchResults.length}} &nbsp;results
+  </div><br/>
+  <div *ngFor="let s of searchResults" style="margin:20px;">
+     <a [href]="s.Url" target="_blank">{{s.Title}}</a><br/>
+      <span>Occurrences: {{s.Count}}</span>
+  </div>
+</div>

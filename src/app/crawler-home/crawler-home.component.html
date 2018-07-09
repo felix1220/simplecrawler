@@ -1,0 +1,16 @@
+<div class="center searchbox">
+    Search:<input type="text" [(ngModel)]="crawlUrl"/> &nbsp;
+    <br/><br/>
+    <button class="btn" (click)="startCrawling()">Index</button>&nbsp;
+    
+    <button class="btn" (click)="clearBox()">Clear</button>
+</div>
+<div class="center searchbox  resultspane">
+  <h3>Results Pane:</h3><br/>
+  <div *ngFor="let m of crawler">
+    <span> <b>{{m.Url}}-Level:{{m.Level}}</b></span><span *ngIf="!m.isProcessed">&nbsp;Processing...</span>
+    <span *ngIf="m.isProcessed">&nbsp;Done</span>
+    
+   </div>
+   
+</div>

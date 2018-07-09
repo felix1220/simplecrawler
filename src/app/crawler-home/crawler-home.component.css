@@ -1,0 +1,29 @@
+.center {
+    margin: auto;
+    width: 50%;
+    margin-top:100px;
+    padding: 20px;
+}
+.searchbox{
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    
+    font-weight: 400;
+    background-color:lightblue;
+    width:60%;
+  }
+  .btn {
+    background-color: #B4B4FF !important;
+    color: #2424AA;
+    margin-bottom: 10px;
+    font-weight: 600;
+    /*	width: 400px;*/
+   
+    border-radius: 0px;
+    border: thin solid #919180;
+    
+    
+  }
+  .resultspane{
+    height:200px;
+    overflow:auto;
+  }
